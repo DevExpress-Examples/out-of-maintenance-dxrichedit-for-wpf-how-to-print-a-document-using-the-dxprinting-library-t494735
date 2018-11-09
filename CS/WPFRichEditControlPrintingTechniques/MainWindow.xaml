@@ -1,4 +1,4 @@
-﻿<dxr:DXRibbonWindow x:Class="WPFRichEditControlPrintingTechniques.MainWindow" mc:Ignorable="d" Title="Printing Techniques" Height="600" Width="800" WindowState="Maximized"
+<dxr:DXRibbonWindow x:Class="WPFRichEditControlPrintingTechniques.MainWindow" mc:Ignorable="d" Title="Printing Techniques" Height="600" Width="800" WindowState="Maximized"
     xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
