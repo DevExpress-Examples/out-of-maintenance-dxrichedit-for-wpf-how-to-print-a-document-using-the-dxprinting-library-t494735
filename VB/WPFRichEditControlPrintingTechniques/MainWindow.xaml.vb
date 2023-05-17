@@ -1,9 +1,6 @@
 ﻿Imports DevExpress.Xpf.Printing
 Imports DevExpress.XtraRichEdit
-Imports DevExpress.XtraRichEdit.Printing
-Imports System.Printing
 Imports System.Windows.Controls
-Imports System.Windows.Documents
 Imports DevExpress.Xpf.Ribbon
 Imports DevExpress.Xpf.Bars
 Imports System.Drawing.Printing
@@ -19,8 +16,6 @@ Namespace WPFRichEditControlPrintingTechniques
             InitializeComponent()
             richEdit.LoadDocument("Grimm.docx", DocumentFormat.OpenXml)
         End Sub
-
-
         Private Sub BarButtonItem_ItemClick_1(ByVal sender As Object, ByVal e As ItemClickEventArgs)
             UsePrintingLibrary()
         End Sub

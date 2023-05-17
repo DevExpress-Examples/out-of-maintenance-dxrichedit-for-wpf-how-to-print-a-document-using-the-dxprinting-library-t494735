@@ -1,9 +1,6 @@
 ﻿using DevExpress.Xpf.Printing;
 using DevExpress.XtraRichEdit;
-using DevExpress.XtraRichEdit.Printing;
-using System.Printing;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using DevExpress.Xpf.Ribbon;
 using DevExpress.Xpf.Bars;
 using System.Drawing.Printing;
@@ -20,8 +17,6 @@ namespace WPFRichEditControlPrintingTechniques
             InitializeComponent();
             richEdit.LoadDocument("Grimm.docx", DocumentFormat.OpenXml);
         }
-
-
         private void BarButtonItem_ItemClick_1(object sender, ItemClickEventArgs e)
         {
             UsePrintingLibrary();
