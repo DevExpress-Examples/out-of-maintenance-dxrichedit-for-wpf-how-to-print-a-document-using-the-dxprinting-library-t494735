@@ -7,6 +7,7 @@ using System.Windows.Documents;
 using DevExpress.Xpf.Ribbon;
 using DevExpress.Xpf.Bars;
 using System.Drawing.Printing;
+using DevExpress.Drawing.Printing;
 
 namespace WPFRichEditControlPrintingTechniques
 {
@@ -38,7 +39,7 @@ namespace WPFRichEditControlPrintingTechniques
 
             //Change the document layout
             docServer.Document.Sections[0].Page.Landscape = true;
-            docServer.Document.Sections[0].Page.PaperKind = PaperKind.A4;            
+            docServer.Document.Sections[0].Page.PaperKind = DXPaperKind.A4;        
 
             //Create a new component link 
             LegacyPrintableComponentLink printableComponent = new LegacyPrintableComponentLink(docServer);

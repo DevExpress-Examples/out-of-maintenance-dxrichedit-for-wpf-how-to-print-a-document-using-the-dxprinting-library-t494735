@@ -7,6 +7,7 @@ Imports System.Windows.Documents
 Imports DevExpress.Xpf.Ribbon
 Imports DevExpress.Xpf.Bars
 Imports System.Drawing.Printing
+Imports DevExpress.Drawing.Printing
 
 Namespace WPFRichEditControlPrintingTechniques
     ''' <summary>
@@ -25,7 +26,7 @@ Namespace WPFRichEditControlPrintingTechniques
             UsePrintingLibrary()
         End Sub
         Private Sub UsePrintingLibrary()
-'            #Region "#PrintableComponentLink"
+            '            #Region "#PrintableComponentLink"
             'Initialize a new server and printer 
             Dim printDialog As New PrintDialog()
             Dim docServer As New RichEditDocumentServer()
@@ -35,7 +36,7 @@ Namespace WPFRichEditControlPrintingTechniques
 
             'Change the document layout
             docServer.Document.Sections(0).Page.Landscape = True
-            docServer.Document.Sections(0).Page.PaperKind = PaperKind.A4
+            docServer.Document.Sections(0).Page.PaperKind = DXPaperKind.A4
 
             'Create a new component link 
             Dim printableComponent As New LegacyPrintableComponentLink(docServer)
@@ -45,7 +46,7 @@ Namespace WPFRichEditControlPrintingTechniques
 
             'Silently print the document
             printableComponent.PrintDirect()
-'            #End Region ' #PrintableComponentLink
+            '            #End Region ' #PrintableComponentLink
         End Sub
     End Class
 End Namespace
